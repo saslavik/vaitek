@@ -12,36 +12,47 @@
 <body>
   <header id="header">
     <div id="header_container" class="container">
+      <div class="mobile_find find">
+        <div class="find_img"><img src="/img/find.svg" alt="Поиск"></div>
+      </div>
       <div id="logo">
         <a href="#"><img src="/img/Group8.png" alt="Вайтек"></a>
       </div>
-      <nav id="nav_header">
-        <ul>
-          <li><a href="/catalog"><div class="nav_link">Каталог</div></a></li>
-          <li><a href="/about"><div class="nav_link">О компании</div></a></li>
-          <li><a href="/shipping"><div class="nav_link">Доставка</div></a></li>
-          <li><a href="/repair"><div class="nav_link">Ремонт</div></a></li>
-          <li><a href="/install"><div class="nav_link">Монтаж</div></a></li>
-          <li><a href="/contacts"><div class="nav_link">Контакты</div></a></li>
-        </ul>
-      </nav>
-      <div id="header_contact">
-        <div id="contact_link">
-          <div class="contact_phone"><a href="tel:+79628815788">8 962 881 57 88</a></div>
-          <div class="contact_email"><a href="mailto:va@vaitek.ru?subject=Mail%20from%20footer%20Vaitek%20Site">va@vaitek.ru</a></div>
+      <div class="header_content">
+        <nav id="nav_header">
+          <div class="close_burger"></div>
+          <ul>
+            <li><a href="/catalog"><div class="nav_link">Каталог</div></a></li>
+            <li><a href="/about"><div class="nav_link">О компании</div></a></li>
+            <li><a href="/shipping"><div class="nav_link">Доставка</div></a></li>
+            <li><a href="/repair"><div class="nav_link">Ремонт</div></a></li>
+            <li><a href="/install"><div class="nav_link">Монтаж</div></a></li>
+            <li><a href="/contacts"><div class="nav_link">Контакты</div></a></li>
+            <li><div class="nav_link find">
+              <div class="find_img"><img src="/img/find.svg" alt="Поиск"></div>
+            </div></li>
+            <div class="find_input"><div class="find_img"><img src="/img/find.svg" alt="Поиск"></div><input type="text" placeholder="Поиск по сайту"></div>
+          </ul>
+        </nav>
+        <div id="header_contact">
+          <div id="contact_link">
+            <div class="contact_phone"><a href="tel:+79628815788">8 962 881 57 88</a></div>
+            <div class="contact_email"><a href="mailto:va@vaitek.ru?subject=Mail%20from%20footer%20Vaitek%20Site">va@vaitek.ru</a></div>
+          </div>
+          <div class="social">
+            <div class="viber"><div></div></div>
+            <div class="whatsapp"><div></div></div>
+          </div>
         </div>
-        <div class="social">
-          <div class="viber"><div></div></div>
-          <div class="whatsapp"><div></div></div>
-        </div>
+      </div>
+      <div class="burger_menu">
+        <span></span>
       </div>
     </div>
   </header>
   <main id="main">
     <section id="firstsection">
-      <h1 id="firstsection_title">Комплексное оснащение
-        ресторанов, баров, кафе
-        и магазинов</h1>
+      <h1 id="firstsection_title">Комплексное оснащение ресторанов, баров, кафе и магазинов</h1>
       <button class="btn btn_orange">оставить заявку</button>
       <div id="firstsection_stats">
         <div class="stats_item"><h2>217</h2><small>Реализованных проектов</small></div>
@@ -124,32 +135,40 @@
     </section>
     <section id="fullset">
       <div class="container">
-        <div id="fullset_title">Полный комплекс услуг по<br>оснащению предприятий<br>общественного питания</div>
+        <div id="fullset_title">Полный комплекс услуг по оснащению предприятий общественного питания</div>
         <div id="fullset_descr">
           <div id="fullset_descr_line"><img src="/img/fullsetLine.svg" alt=""></div>
           <div class="fullset_item">
             <div class="fullset_item_img"><img src="/img/fullset1.svg" alt="Проектирование"></div>
-            <div class="fullset_item_title">Проектирование</div>
-            <div class="fullset_item_descr">Предприятий питания и пищевых
-              производств</div>
+            <div class="fullset_item_text">
+              <div class="fullset_item_title">Проектирование</div>
+              <div class="fullset_item_descr">Предприятий питания и пищевых
+                производств</div>
+            </div>
           </div>
           <div class="fullset_item">
             <div class="fullset_item_img"><img src="/img/fullset2.svg" alt="Обеспечение"></div>
-            <div class="fullset_item_title">Обеспечение</div>
-            <div class="fullset_item_descr">Необходимыми запчастями
+            <div class="fullset_item_text">
+              <div class="fullset_item_title">Обеспечение</div>
+              <div class="fullset_item_descr">Необходимыми запчастями
               из складского запаса</div>
+            </div>
           </div>
           <div class="fullset_item">
             <div class="fullset_item_img"><img src="/img/fullset3.svg" alt="Обслуживание"></div>
-            <div class="fullset_item_title">Обслуживание</div>
-            <div class="fullset_item_descr">Монтаж, ремонт и всего
+            <div class="fullset_item_text">
+              <div class="fullset_item_title">Обслуживание</div>
+              <div class="fullset_item_descr">Монтаж, ремонт и всего
               оборудования</div>
+            </div>
           </div>
           <div class="fullset_item">
             <div class="fullset_item_img"><img src="/img/fullset4.svg" alt="Поставка"></div>
-            <div class="fullset_item_title">Поставка</div>
-            <div class="fullset_item_descr">Технологического оборудования
+            <div class="fullset_item_text">
+              <div class="fullset_item_title">Поставка</div>
+              <div class="fullset_item_descr">Технологического оборудования
               для профессиональной кухни</div>
+            </div>
           </div>
         </div>
       </div>
@@ -229,15 +248,6 @@
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.slick').slick({
-        dots: true,
-        draggable: false,
-        infinite: false,
-      });
-    });
-  </script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
