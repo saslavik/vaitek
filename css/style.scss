@@ -3,6 +3,11 @@ body {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 425px) {
+  .body_lock {
+    overflow: hidden;
+  }
+}
 
 .btn {
   width: 253px;
@@ -73,6 +78,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 425px) {
+      position: relative;
+    }
   }
   .mobile_find {
     display: none;
@@ -85,8 +93,10 @@ body {
     flex: 0 1 80%;
     justify-content: space-between;
     #nav_header {
-      overflow: hidden;
-      position: relative;
+      @media (min-width: 426px) {
+        position: relative;
+        overflow: hidden;
+      }
     }
     ul {
       display: flex;
@@ -113,11 +123,15 @@ body {
         display: flex;
         align-items: center;
         flex-direction: row;
+        &_left {
+          display: flex;
+        }
         &_img {
           margin-top: 8px;
         }
         &_input {
           display: flex;
+          justify-content: space-between;
           align-items: center;
           width: 100%;
           top: 0;
@@ -141,8 +155,17 @@ body {
         &_active {
           right: 0;
           transition: 0.5s;
-          z-index: 15px;
+          z-index: 15;
           background-color: rgb(36, 36, 36);
+        }
+        @media (max-width: 425px){
+          &_input {
+            top: 0;
+            left: -100%;
+          }
+          &_active {
+            left: 0;
+          }
         }
       }
     }
@@ -194,7 +217,7 @@ body {
       }
     }
   }
-  .close_burger {
+  .close_burger, .close_finder {
     display: none;
     width: 25px;
     height: 25px;
@@ -218,6 +241,14 @@ body {
     }
     &::after {
       transform: rotate(-45deg);
+    }
+  }
+  .close_finder {
+    display: block;
+    align-self: center;
+    margin-right: 30px;
+    &:before, &:after {
+      background-color: rgb(29, 29, 29);
     }
   }
   @media (max-width: 425px) {
@@ -256,8 +287,7 @@ body {
       }
     }
     .header_content {
-      // padding: 20px;
-      position: absolute;
+      position: fixed;
       background-color: black;
       height: 100vh;
       z-index: 10;
@@ -552,13 +582,18 @@ body {
   &_img {
     flex: 1 1 11%;
   }
-  @media (max-width: 425px) {
+}
+@media (max-width: 425px) {
+  #partners {
     overflow: hidden;
     .partners_content {
-      gap: 0px;
+      gap: 30px;
     }
     .partners_img {
       flex: 1 1 25%;
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -597,6 +632,7 @@ body {
         line-height: 19px;
         display: block;
         border: none;
+        padding: 10px 0;
         outline: 0;
         background-color: transparent;
         border-bottom: 1px solid rgba(28, 28, 28, 0.3);
@@ -605,6 +641,26 @@ body {
   }
   @media (max-width: 425px) {
     overflow: hidden;
+    padding: 30px 0;
+    .section_title {
+      text-align: left;
+    }
+    .callback_content {
+      text-align: left;
+    }
+    .callme {
+      flex-direction: column;
+      align-items: center;
+      &_input {
+        width: 100%;
+        input {
+          width: 100%;
+        }
+      }
+      button {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -659,5 +715,27 @@ body {
   }
   @media (max-width: 425px) {
     overflow: hidden;
+    text-align: center;
+    &_content {
+      flex-direction: column;
+      .footer_links {
+        flex-direction: column;
+        gap: 0;
+        margin: 0 -20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+      }
+      .footer_contacts {
+        text-align: center;
+        padding: 20px 0;
+      }
+    }
+    &_copyrights {
+      flex-direction: column;
+      p {
+        margin: 6px 0;
+      }
+    }
+
   }
 }
