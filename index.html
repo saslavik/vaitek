@@ -12,9 +12,14 @@
 <body>
   <header id="header">
     <div id="header_container" class="container">
-      <div class="mobile_find find">
+      <div class="find_mobile find">
         <div class="find_img"><img src="/img/find.svg" alt="Поиск"></div>
+        <div class="find_input find_input_mobile">
+          <div class="find_left"><div class="find_img"><img src="/img/find.svg" alt="Поиск"></div><input type="text" placeholder="Поиск по сайту"></div>
+          <div class="close_finder"></div>
+        </div>
       </div>
+
       <div id="logo">
         <a href="#"><img src="/img/Group8.png" alt="Вайтек"></a>
       </div>
@@ -28,10 +33,10 @@
             <li><a href="/repair"><div class="nav_link">Ремонт</div></a></li>
             <li><a href="/install"><div class="nav_link">Монтаж</div></a></li>
             <li><a href="/contacts"><div class="nav_link">Контакты</div></a></li>
-            <li><div class="nav_link find">
+            <li><div class="nav_link find find_desktop">
               <div class="find_img"><img src="/img/find.svg" alt="Поиск"></div>
             </div></li>
-            <div class="find_input">
+            <div class="find_input find_input_desktop">
               <div class="find_left"><div class="find_img"><img src="/img/find.svg" alt="Поиск"></div><input type="text" placeholder="Поиск по сайту"></div>
               <div class="close_finder"></div>
             </div>
@@ -68,29 +73,29 @@
         <div class="section_title">Каталог</div>
         <div class="cards">
           <div class="card">
-            <div class="card_img"><img src="/img/cat1.png" alt="Технологическое
+            <div class="card_img"><img class="lozad" src="/img/cat1.png" alt="Технологическое
               оборудование"></div>
             <div class="card_title">Технологическое
               оборудование</div>
           </div>
           <div class="card">
-            <div class="card_img"><img src="/img/cat2.png" alt="Холодильное
+            <div class="card_img"><img class="lozad" src="/img/cat2.png" alt="Холодильное
               оборудование"></div>
             <div class="card_title">Холодильное
               оборудование</div>
           </div>
           <div class="card">
-            <div class="card_img"><img src="/img/cat3.png" alt="Посуда и
+            <div class="card_img"><img class="lozad" src="/img/cat3.png" alt="Посуда и
               инвентарь"></div>
             <div class="card_title">Посуда и<br>инвентарь</div>
           </div>
           <div class="card">
-            <div class="card_img"><img src="/img/cat4.png" alt="Запасные части
+            <div class="card_img"><img class="lozad" src="/img/cat4.png" alt="Запасные части
               для оборудования"></div>
             <div class="card_title">Запасные части<br>для оборудования</div>
           </div>
           <div class="card">
-            <div class="card_img"><img src="/img/cat5.png" alt="Сервисные
+            <div class="card_img"><img class="lozad" src="/img/cat5.png" alt="Сервисные
               услуги"></div>
             <div class="card_title">Сервисные<br>услуги</div>
           </div>
@@ -103,7 +108,7 @@
         <div class="slider">
           <div class="slick">
             <div class="slick_item">
-              <div class="slick_img"><img src="/img/slick1.jpg" alt="Greengo Juice Bar&Shop"></div>
+              <div class="slick_img"><img class="lozad" src="/img/slick1.jpg" alt="Greengo Juice Bar&Shop"></div>
               <div class="slick_text">
                 <div class="slick_title"><img src="/img/slicktitle1.png" alt=""></div>
                 <div class="slick_descr"><p>Вайтек осуществил комплектное проектирование и оснащение новогокреативного магазина-бара Greengo Juice Bar&Shop в Митино. В рамкахреализации проекта осуществлена разработка
@@ -113,7 +118,7 @@
               </div>
             </div>
             <div class="slick_item">
-              <div class="slick_img"><img src="/img/slick1.jpg" alt="Greengo Juice Bar&Shop"></div>
+              <div class="slick_img"><img class="lozad" src="/img/slick1.jpg" alt="Greengo Juice Bar&Shop"></div>
               <div class="slick_text">
                 <div class="slick_title"><img src="/img/slicktitle1.png" alt=""></div>
                 <div class="slick_descr"><p>Вайтек осуществил комплектное проектирование и оснащение новогокреативного магазина-бара Greengo Juice Bar&Shop в Митино. В рамкахреализации проекта осуществлена разработка
@@ -123,7 +128,7 @@
               </div>
             </div>
             <div class="slick_item">
-              <div class="slick_img"><img src="/img/slick1.jpg" alt="Greengo Juice Bar&Shop"></div>
+              <div class="slick_img"><img class="lozad" src="/img/slick1.jpg" alt="Greengo Juice Bar&Shop"></div>
               <div class="slick_text">
                 <div class="slick_title"><img src="/img/slicktitle1.png" alt=""></div>
                 <div class="slick_descr"><p>Вайтек осуществил комплектное проектирование и оснащение новогокреативного магазина-бара Greengo Juice Bar&Shop в Митино. В рамкахреализации проекта осуществлена разработка
@@ -142,7 +147,7 @@
         <div id="fullset_descr">
           <div id="fullset_descr_line"><img src="/img/fullsetLine.svg" alt=""></div>
           <div class="fullset_item">
-            <div class="fullset_item_img"><img src="/img/fullset1.svg" alt="Проектирование"></div>
+            <div class="fullset_item_img"><img class="lozad" src="/img/fullset1.svg" alt="Проектирование"></div>
             <div class="fullset_item_text">
               <div class="fullset_item_title">Проектирование</div>
               <div class="fullset_item_descr">Предприятий питания и пищевых
@@ -150,7 +155,7 @@
             </div>
           </div>
           <div class="fullset_item">
-            <div class="fullset_item_img"><img src="/img/fullset2.svg" alt="Обеспечение"></div>
+            <div class="fullset_item_img"><img class="lozad" src="/img/fullset2.svg" alt="Обеспечение"></div>
             <div class="fullset_item_text">
               <div class="fullset_item_title">Обеспечение</div>
               <div class="fullset_item_descr">Необходимыми запчастями
@@ -158,7 +163,7 @@
             </div>
           </div>
           <div class="fullset_item">
-            <div class="fullset_item_img"><img src="/img/fullset3.svg" alt="Обслуживание"></div>
+            <div class="fullset_item_img"><img class="lozad" src="/img/fullset3.svg" alt="Обслуживание"></div>
             <div class="fullset_item_text">
               <div class="fullset_item_title">Обслуживание</div>
               <div class="fullset_item_descr">Монтаж, ремонт и всего
@@ -166,7 +171,7 @@
             </div>
           </div>
           <div class="fullset_item">
-            <div class="fullset_item_img"><img src="/img/fullset4.svg" alt="Поставка"></div>
+            <div class="fullset_item_img"><img class="lozad" src="/img/fullset4.svg" alt="Поставка"></div>
             <div class="fullset_item_text">
               <div class="fullset_item_title">Поставка</div>
               <div class="fullset_item_descr">Технологического оборудования
@@ -180,18 +185,18 @@
       <div class="container">
         <div class="section_title">Партнеры</div>
         <div class="partners_content">
-          <div class="partners_img"><img src="/img/partners/1.png" alt="Партнеры"></div>
-          <div class="partners_img"><img src="/img/partners/2.png" alt="Партнеры"></div>
-          <div class="partners_img"><img src="/img/partners/3.png" alt="Партнеры"></div>
-          <div class="partners_img"><img src="/img/partners/4.png" alt="Партнеры"></div>
-          <div class="partners_img"><img src="/img/partners/5.png" alt="Партнеры"></div>
-          <div class="partners_img"><img src="/img/partners/6.png" alt="Партнеры"></div>
-          <div class="partners_img"><img src="/img/partners/7.png" alt="Партнеры"></div>
-          <div class="partners_img"><img src="/img/partners/8.png" alt="Партнеры"></div>
-          <div class="partners_img"><img src="/img/partners/9.png" alt="Партнеры"></div>
-          <div class="partners_img"><img src="/img/partners/10.png" alt="Партнеры"></div>
-          <div class="partners_img"><img src="/img/partners/11.png" alt="Партнеры"></div>
-          <div class="partners_img"><img src="/img/partners/12.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/1.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/2.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/3.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/4.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/5.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/6.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/7.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/8.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/9.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/10.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/11.png" alt="Партнеры"></div>
+          <div class="partners_img"><img class="lozad" src="/img/partners/12.png" alt="Партнеры"></div>
         </div>
       </div>
     </section>
@@ -250,7 +255,8 @@
   src="https://code.jquery.com/jquery-1.12.4.min.js"
   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
   crossorigin="anonymous"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script async type="text/javascript" src="slick/slick.min.js"></script>
+  <script async type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </body>
 </html>

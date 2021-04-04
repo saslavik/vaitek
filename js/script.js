@@ -7,14 +7,21 @@ $(document).ready(function(){
 });
 
 $(document).ready(function() {
-  $('.find').click(function(event) {
-    $('.find_input').toggleClass('find_active')
+  $('.find_desktop').click(function(event) {
+    $('.find_input_desktop').toggleClass('find_active')
   })
   $('#main').click(function(event) {
-    $('.find_input').removeClass('find_active')
+    $('.find_input_desktop').removeClass('find_active')
+    $('.find_input_mobile').removeClass('find_active')
   })
   $('.close_finder').click(function(event) {
-    $('.find_input').removeClass('find_active')
+    $('.find_input_desktop').removeClass('find_active')
+  })
+  $('.find_mobile').click(function(event) {
+    $('.find_input_mobile').toggleClass('find_active')
+  })
+  $('.close_finder').click(function(event) {
+    $('.find_input_desktop').removeClass('find_active')
   })
   $('.burger_menu').click(function(event) {
     $('.header_content').toggleClass('header_content_active')
